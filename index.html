@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
 </head>
 <body>
-    <div class="open">
-        <div class="layer"></div>
-        <div class="layer"></div>
-    </div>
-    <section>
-        <div class="bannerText">
-            <h2>Think Creative</h2><br>
-            <h3>And Make Innovative Design</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nostrum aliquam impedit molestias explicabo quisquam, autem dignissimos excepturi. Aliquid blanditiis iusto perspiciatis commodi asperiores tenetur ullam eius dignissimos. Modi, cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi incidunt, quidem error officiis optio blanditiis natus. Ipsa deleniti eius, expedita voluptatum eligendi, voluptas sint blanditiis suscipit modi, aut ipsum!</p>
-            <a href="#">Read More</a>
+    <div class="navigation">
+        <div class="banner">
+            <img src="image/david.jpg" class="cover">
         </div>
-        <img src="bulb.jpg" alt="balon lampu" class="bulb">
+        <div class="navLink">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="sec">
+        <header>
+            <div class="toogle"></div>
+            <a href="#" class="btn">Hire Me</a>
+        </header>
+
+        <div class="imgBx">
+            <img src="image/david.jpg" alt="My Photo" class="cover">
+        </div>
+        <div class="content">
+            <h2>Hi, I am<br><span>David Kawengian</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex sit distinctio eligendi voluptatum repudiandae quia amet ipsam enim aliquam, vitae dolorum fuga eius culpa unde reprehenderit rem quo quisquam eos.</p>
+            <a href="#" class="btn">Download My CV</a>
+        </div>
+        <footer>
+            <ul class="sci">
+                <li><a href="#"><img src="image/facebook.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="image/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="image/instagram.png" alt="instagram"></a></li>
+            </ul>
+        </footer>
     </section>
+
+    <script>
+        let menuToggle = document.querySelector('.toogle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec')
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
