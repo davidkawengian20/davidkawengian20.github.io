@@ -212,15 +212,9 @@ header
     /* font-weight: 500;  */
     border-radius: 4px;
     letter-spacing: 1px;
+    
 }
-.name
-{
-    font-weight: 700;
-    color: salmon;
-    text-decoration: none;
-    /* position: fixed; */
-    right: 10%;
-}
+
 
 .sec .imgBx
 {
@@ -254,6 +248,10 @@ header
     color: #777;
     font-size: 1.2em;
     margin-bottom: 20px ;
+}
+.sec .content p:nth-child(2)
+{
+    text-indent: 50px;
 }
 .sec .content .btn
 {
@@ -343,5 +341,10 @@ footer
         font-size: 1.5em;
         margin-left: 50px;
     }
+    header .btn
+    {
+        text-align: right;
+    }
+    
     
 }
