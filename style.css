@@ -217,7 +217,7 @@ header
     font-weight: 700;
     color: salmon;
     text-decoration: none;
-    position: fixed;
+    /* position: fixed; */
     right: 10%;
 }
 
@@ -300,7 +300,7 @@ footer
     }
     header
     {
-        position: fixed;
+        /* position: fixed; */
         padding: 20px 40px;
         z-index: 5;
 
