@@ -302,6 +302,7 @@ footer
     {
         position: fixed;
         padding: 20px 40px;
+        z-index: 5;
 
     }
     .sec .imgBx
